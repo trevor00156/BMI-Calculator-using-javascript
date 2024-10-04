@@ -1,0 +1,84 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.box_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box_container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.height,
+.weight {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.height:focus,
+.weight:focus {
+  border-color: #74ebd5;
+}
+
+.calculate {
+  background-color: #9face6;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculate:hover {
+  background-color: #74ebd5;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
